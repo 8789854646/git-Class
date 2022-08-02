@@ -1,0 +1,190 @@
+{
+	"id": "206a771f-993e-408f-a37a-237ce037c5d0",
+	"name": "GitHub2",
+	"timestamp": "2022-07-01T16:14:09.189Z",
+	"collection_id": "18849005-33578e79-db25-4bf0-95ae-2b181b681073",
+	"folder_id": 0,
+	"environment_id": "18849005-a8773822-12aa-4e87-a0b5-b195ba189887",
+	"totalPass": 11,
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "d0f61d7e-fb71-495f-9a1d-cadda25f3f04",
+			"name": "createRepo",
+			"url": "https://api.github.com/user/repos",
+			"time": 1332,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response time is less than 1200ms": false,
+				"Status code name has string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 1200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1332
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response time is less than 1200ms": false,
+					"Status code name has string": true
+				}
+			]
+		},
+		{
+			"id": "6158133c-f6d5-497f-9cb7-485cd693ac00",
+			"name": "readRepo",
+			"url": "https://api.github.com/repos/8789854646/vivek5",
+			"time": 296,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 1000ms": true,
+				"Status code name has string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 1000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				296
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 1000ms": true,
+					"Status code name has string": true
+				}
+			]
+		},
+		{
+			"id": "6327092c-798f-4cb9-85f3-550c1920f8e6",
+			"name": "updateRepo",
+			"url": "https://api.github.com/repos/8789854646/vivek5",
+			"time": 510,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 1100ms": true,
+				"Status code name has string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 1100ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				510
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 1100ms": true,
+					"Status code name has string": true
+				}
+			]
+		},
+		{
+			"id": "77c58048-46bb-41d7-9dc3-b1ad81379c81",
+			"name": "deleteRepo",
+			"url": "https://api.github.com/repos/8789854646/vivek8",
+			"time": 593,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true,
+				"Response time is less than 1000ms": true,
+				"Status code name has string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 1000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				593
+			],
+			"allTests": [
+				{
+					"Status code is 204": true,
+					"Response time is less than 1000ms": true,
+					"Status code name has string": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2731,
+	"collection": {
+		"requests": [
+			{
+				"id": "d0f61d7e-fb71-495f-9a1d-cadda25f3f04",
+				"method": "POST"
+			},
+			{
+				"id": "6158133c-f6d5-497f-9cb7-485cd693ac00",
+				"method": "GET"
+			},
+			{
+				"id": "6327092c-798f-4cb9-85f3-550c1920f8e6",
+				"method": "PATCH"
+			},
+			{
+				"id": "77c58048-46bb-41d7-9dc3-b1ad81379c81",
+				"method": "DELETE"
+			}
+		]
+	}
+}

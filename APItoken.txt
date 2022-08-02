@@ -1,0 +1,8 @@
+https://api.github.com/user/repos
+
+newToken-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
+
+
+newToken1-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
+
+DEltete repo- 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
